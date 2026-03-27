@@ -182,6 +182,18 @@ Built with Chart.js 4.5 — line, bar, doughnut, radar, and scatter charts, KPI 
 
 ---
 
+## Future Work
+
+Several natural extensions could make this pipeline production-grade:
+
+- **LLM-powered personalisation** — pipe each customer segment's profile into an LLM (e.g. Claude) to auto-generate personalised marketing email copy per segment, turning the clustering output directly into a campaign-ready asset
+- **Real-time inference** — wrap the association rule engine and recommendation model in a FastAPI service so product recommendations can be served live at checkout
+- **Temporal dynamics** — incorporate order timestamps to build time-decay RFM scores and detect seasonal purchase shifts (e.g. holiday basket patterns)
+- **Deep learning recommendations** — replace item-item cosine similarity with a neural collaborative filtering model (e.g. two-tower architecture) for improved cold-start handling
+- **A/B testing framework** — add experimentation scaffolding to measure uplift from segment-specific promotions against a holdout control group
+
+---
+
 ## Author
 
-**Aman Pandey** · [apandey.aman@gmail.com](mailto:apandey.aman@gmail.com)
+**Aman Pandey** · [mailto.aman720@gmail.com](mailto:mailto.aman720@gmail.com) · [LinkedIn](https://www.linkedin.com/in/amanpandeyy) ·

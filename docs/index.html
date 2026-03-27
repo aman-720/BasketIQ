@@ -540,7 +540,13 @@
         </div>
 
         <div class="footer">
-            BasketIQ | Market Basket Analysis Dashboard | Built with Chart.js | Data: 32.4M Instacart Transactions
+            Built by <strong>Aman Pandey</strong>
+            &nbsp;·&nbsp;
+            <a href="https://github.com/aman-720/BasketIQ" target="_blank" style="color:var(--accent-blue);text-decoration:none;">GitHub Repo</a>
+            &nbsp;·&nbsp;
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" style="color:var(--accent-blue);text-decoration:none;">LinkedIn</a>
+            &nbsp;·&nbsp;
+            32.4M Instacart Transactions · Chart.js
         </div>
     </div>
 
@@ -877,7 +883,10 @@
             responsive: true, maintainAspectRatio: false, cutout: '60%',
             plugins: {
                 legend: { position: 'right', labels: { usePointStyle: true, padding: 12 }},
-                tooltip: { callbacks: { label: ctx => `${ctx.label}: ${ctx.parsed.toLocaleString()} users (${clusters[ctx.dataIndex].pct}%)` }}
+                tooltip: { callbacks: {
+                    label: ctx => `${ctx.label}: ${ctx.parsed.toLocaleString()} users (${clusters[ctx.dataIndex].pct}%)`,
+                    afterLabel: ctx => `Strategy: ${strategies[clusters[ctx.dataIndex].seg]}`
+                }}
             }
         }
     });
@@ -894,37 +903,56 @@
         },
         options: {
             responsive: true, maintainAspectRatio: false,
-            plugins: { legend: { position: 'top', labels: { usePointStyle: true }}},
+            plugins: {
+                legend: { position: 'top', labels: { usePointStyle: true }},
+                tooltip: { callbacks: { afterBody: ctx => ctx[0] ? [`Strategy: ${strategies[clusters[ctx[0].dataIndex].seg]}`] : [] }}
+            },
             scales: { y: { beginAtZero: true }, x: { grid: { display: false }, ticks: { font: { size: 10 }}}}
         }
     });
 
-    // Radar chart
+    // Radar chart — normalised against Champions (max segment) using real Kaggle values
     new Chart(document.getElementById('radarChart'), {
         type: 'radar',
         data: {
             labels: ['Frequency', 'Monetary', 'Recency (inv)', 'Product Variety', 'Reorder Rate'],
             datasets: clusters.map((c, i) => {
-                const maxOrders = 66.6, maxItems = 523, maxDays = 16.4, maxUnique = 198, maxReorder = 63.5;
+                // Max values from real Kaggle pipeline output
+                const maxOrders = 64.8, maxItems = 826, maxDays = 23.9, maxUnique = 826, maxReorder = 73.1;
+                const variety = {Champions:826,Loyal:347,Potential:122,Risk:61,Hibern:51};
+                const vVal = c.seg === 'Champions' ? 826 : c.seg === 'Loyal Customers' ? 347 :
+                             c.seg === 'Potential Loyalists' ? 122 : c.seg === 'At-Risk' ? 61 : 51;
                 return {
                     label: c.seg,
                     data: [
-                        c.orders / maxOrders,
-                        c.items / maxItems,
-                        1 - (c.days / maxDays),
-                        (c.seg === 'Champions' ? 198 : c.seg === 'Loyal Customers' ? 140 : c.seg === 'Potential Loyalists' ? 82 : 78) / maxUnique,
-                        c.reorder / maxReorder
+                        Math.min(c.orders / maxOrders, 1),
+                        Math.min(c.items / maxItems, 1),
+                        1 - Math.min(c.days / maxDays, 1),
+                        Math.min(vVal / maxUnique, 1),
+                        Math.min(c.reorder / maxReorder, 1)
                     ],
                     borderColor: c.color,
                     backgroundColor: c.color + '20',
                     borderWidth: 2,
-                    pointRadius: 3
+                    pointRadius: 4,
+                    pointHoverRadius: 6
                 };
             })
         },
         options: {
             responsive: true, maintainAspectRatio: false,
-            plugins: { legend: { position: 'top', labels: { usePointStyle: true, padding: 12 }}},
+            plugins: {
+                legend: { position: 'top', labels: { usePointStyle: true, padding: 12 }},
+                tooltip: {
+                    callbacks: {
+                        title: ctx => ctx[0].dataset.label,
+                        afterBody: ctx => {
+                            const seg = ctx[0].dataset.label;
+                            return [`Strategy: ${strategies[seg]}`];
+                        }
+                    }
+                }
+            },
             scales: { r: { beginAtZero: true, max: 1, ticks: { display: false }, grid: { color: 'rgba(255,255,255,0.06)' }, pointLabels: { font: { size: 11 }}}}
         }
     });
