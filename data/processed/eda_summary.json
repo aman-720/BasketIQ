@@ -1,0 +1,13 @@
+{
+  "total_transactions": 32434489,
+  "total_orders": 3214874,
+  "total_users": 206209,
+  "total_products": 49688,
+  "total_departments": 21,
+  "total_aisles": 134,
+  "avg_items_per_order": 10.088883421247614,
+  "median_items_per_order": 8.0,
+  "avg_orders_per_user": 15.590367054784224,
+  "reorder_rate": 0.5896974667922161,
+  "avg_days_between_orders": 11.114836226863012
+}

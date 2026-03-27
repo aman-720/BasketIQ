@@ -1,0 +1,101 @@
+product_id_a,product_id_b,co_count,product_a,product_b
+13176,47209,2609,Bag of Organic Bananas,Organic Hass Avocado
+13176,21137,2580,Bag of Organic Bananas,Organic Strawberries
+21137,24852,2251,Organic Strawberries,Banana
+24852,47766,2174,Banana,Organic Avocado
+21903,24852,2089,Organic Baby Spinach,Banana
+13176,21903,2054,Bag of Organic Bananas,Organic Baby Spinach
+21137,47209,1748,Organic Strawberries,Organic Hass Avocado
+24852,47626,1676,Banana,Large Lemon
+13176,27966,1667,Bag of Organic Bananas,Organic Raspberries
+16797,24852,1639,Strawberries,Banana
+21137,21903,1612,Organic Strawberries,Organic Baby Spinach
+24852,28204,1424,Banana,Organic Fuji Apple
+21137,27966,1396,Organic Strawberries,Organic Raspberries
+21903,47209,1389,Organic Baby Spinach,Organic Hass Avocado
+24852,26209,1335,Banana,Limes
+24852,27845,1304,Banana,Organic Whole Milk
+24852,49683,1273,Banana,Cucumber Kirby
+24852,47209,1262,Banana,Organic Hass Avocado
+21903,47766,1195,Organic Baby Spinach,Organic Avocado
+26209,47626,1146,Limes,Large Lemon
+24852,45066,1130,Banana,Honeycrisp Apple
+13176,27845,1107,Bag of Organic Bananas,Organic Whole Milk
+13176,22935,1086,Bag of Organic Bananas,Organic Yellow Onion
+27966,47209,1052,Organic Raspberries,Organic Hass Avocado
+47626,47766,1016,Large Lemon,Organic Avocado
+8277,13176,999,Apple Honeycrisp Organic,Bag of Organic Bananas
+21137,27845,984,Organic Strawberries,Organic Whole Milk
+21137,47766,971,Organic Strawberries,Organic Avocado
+24852,27966,970,Banana,Organic Raspberries
+21137,39275,965,Organic Strawberries,Organic Blueberries
+13176,19057,963,Bag of Organic Bananas,Organic Large Extra Fancy Fuji Apple
+13176,45007,949,Bag of Organic Bananas,Organic Zucchini
+4920,24852,949,Seedless Red Grapes,Banana
+5876,13176,926,Organic Lemon,Bag of Organic Bananas
+13176,47766,915,Bag of Organic Bananas,Organic Avocado
+13176,39275,908,Bag of Organic Bananas,Organic Blueberries
+21903,47626,902,Organic Baby Spinach,Large Lemon
+26209,47766,890,Limes,Organic Avocado
+5876,47209,884,Organic Lemon,Organic Hass Avocado
+4605,24852,872,Yellow Onions,Banana
+13176,26209,871,Bag of Organic Bananas,Limes
+22935,24964,869,Organic Yellow Onion,Organic Garlic
+21903,24964,865,Organic Baby Spinach,Organic Garlic
+13176,24964,856,Bag of Organic Bananas,Organic Garlic
+13176,30391,852,Bag of Organic Bananas,Organic Cucumber
+21903,26209,831,Organic Baby Spinach,Limes
+21903,45007,830,Organic Baby Spinach,Organic Zucchini
+22935,47209,823,Organic Yellow Onion,Organic Hass Avocado
+21903,22935,819,Organic Baby Spinach,Organic Yellow Onion
+21137,26209,819,Organic Strawberries,Limes
+13176,37646,801,Bag of Organic Bananas,Organic Gala Apples
+13176,47626,800,Bag of Organic Bananas,Large Lemon
+24852,39275,797,Banana,Organic Blueberries
+24852,40706,780,Banana,Organic Grape Tomatoes
+26209,47209,771,Limes,Organic Hass Avocado
+24852,24964,770,Banana,Organic Garlic
+24852,45007,769,Banana,Organic Zucchini
+24852,30489,765,Banana,Original Hummus
+8277,24852,751,Apple Honeycrisp Organic,Banana
+21903,27966,715,Organic Baby Spinach,Organic Raspberries
+21137,22935,713,Organic Strawberries,Organic Yellow Onion
+30391,47209,710,Organic Cucumber,Organic Hass Avocado
+24964,47209,704,Organic Garlic,Organic Hass Avocado
+13176,16797,700,Bag of Organic Bananas,Strawberries
+21903,27845,700,Organic Baby Spinach,Organic Whole Milk
+24852,44632,698,Banana,Sparkling Water Grapefruit
+21137,30391,698,Organic Strawberries,Organic Cucumber
+21137,47626,693,Organic Strawberries,Large Lemon
+26209,31717,693,Limes,Organic Cilantro
+9076,24852,689,Blueberries,Banana
+24852,37646,685,Banana,Organic Gala Apples
+13176,40706,681,Bag of Organic Bananas,Organic Grape Tomatoes
+24852,28985,676,Banana,Michigan Organic Kale
+21137,24964,673,Organic Strawberries,Organic Garlic
+45007,47209,670,Organic Zucchini,Organic Hass Avocado
+21903,40706,669,Organic Baby Spinach,Organic Grape Tomatoes
+21137,45007,665,Organic Strawberries,Organic Zucchini
+22935,24852,660,Organic Yellow Onion,Banana
+13176,42265,658,Bag of Organic Bananas,Organic Baby Carrots
+24852,42265,657,Banana,Organic Baby Carrots
+24852,27086,657,Banana,Half & Half
+13176,44359,656,Bag of Organic Bananas,Organic Small Bunch Celery
+21137,40706,652,Organic Strawberries,Organic Grape Tomatoes
+21903,30391,651,Organic Baby Spinach,Organic Cucumber
+8277,21137,651,Apple Honeycrisp Organic,Organic Strawberries
+5876,21137,647,Organic Lemon,Organic Strawberries
+24964,47626,640,Organic Garlic,Large Lemon
+8277,47209,632,Apple Honeycrisp Organic,Organic Hass Avocado
+47766,49683,632,Organic Avocado,Cucumber Kirby
+24852,26604,630,Banana,Organic Blackberries
+19057,21137,626,Organic Large Extra Fancy Fuji Apple,Organic Strawberries
+4920,21137,625,Seedless Red Grapes,Organic Strawberries
+13176,27104,624,Bag of Organic Bananas,Fresh Cauliflower
+21903,49683,622,Organic Baby Spinach,Cucumber Kirby
+24184,24852,619,Red Peppers,Banana
+5450,24852,617,Small Hass Avocado,Banana
+24852,46979,609,Banana,Asparagus
+13176,41950,605,Bag of Organic Bananas,Organic Tomato Cluster
+24852,34969,603,Banana,Red Vine Tomato
+5077,24852,602,100% Whole Wheat Bread,Banana

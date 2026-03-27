@@ -1,0 +1,9 @@
+{
+  "aisle_rules_count": 2016,
+  "product_rules_count": 158,
+  "avg_lift_aisle": 1.5017173503949515,
+  "max_lift_aisle": 6.2714109890799055,
+  "top_rule": "frozen vegan vegetarian \u2192 tofu meat alternatives",
+  "top_rule_lift": 6.2714109890799055,
+  "frequent_itemsets_count": 1739
+}

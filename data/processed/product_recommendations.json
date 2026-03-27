@@ -1,0 +1,2752 @@
+{
+  "196": {
+    "product_name": "Soda",
+    "similar_products": [
+      {
+        "product_id": 6184,
+        "product_name": "Clementines",
+        "similarity": 0.2891
+      },
+      {
+        "product_id": 12341,
+        "product_name": "Hass Avocados",
+        "similarity": 0.1044
+      },
+      {
+        "product_id": 43352,
+        "product_name": "Raspberries",
+        "similarity": 0.0948
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.083
+      },
+      {
+        "product_id": 16797,
+        "product_name": "Strawberries",
+        "similarity": 0.0812
+      },
+      {
+        "product_id": 49235,
+        "product_name": "Organic Half & Half",
+        "similarity": 0.0764
+      },
+      {
+        "product_id": 19660,
+        "product_name": "Spring Water",
+        "similarity": 0.0686
+      },
+      {
+        "product_id": 39408,
+        "product_name": "Gala Apples",
+        "similarity": 0.0631
+      },
+      {
+        "product_id": 9076,
+        "product_name": "Blueberries",
+        "similarity": 0.0546
+      },
+      {
+        "product_id": 9387,
+        "product_name": "Granny Smith Apples",
+        "similarity": 0.0533
+      }
+    ]
+  },
+  "260": {
+    "product_name": "Cantaloupe",
+    "similar_products": [
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.2488
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.1862
+      },
+      {
+        "product_id": 40706,
+        "product_name": "Organic Grape Tomatoes",
+        "similarity": 0.1849
+      },
+      {
+        "product_id": 22825,
+        "product_name": "Organic D'Anjou Pears",
+        "similarity": 0.1819
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.1818
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1799
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.1792
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1777
+      },
+      {
+        "product_id": 30391,
+        "product_name": "Organic Cucumber",
+        "similarity": 0.1742
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1728
+      }
+    ]
+  },
+  "432": {
+    "product_name": "Vanilla Almond Breeze Almond Milk",
+    "similar_products": [
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.1611
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1323
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.1181
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.117
+      },
+      {
+        "product_id": 47144,
+        "product_name": "Unsweetened Original Almond Breeze Almond Milk",
+        "similarity": 0.1103
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1048
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.1034
+      },
+      {
+        "product_id": 28204,
+        "product_name": "Organic Fuji Apple",
+        "similarity": 0.1011
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.1008
+      },
+      {
+        "product_id": 9076,
+        "product_name": "Blueberries",
+        "similarity": 0.0992
+      }
+    ]
+  },
+  "1463": {
+    "product_name": "Organic Milk",
+    "similar_products": [
+      {
+        "product_id": 30233,
+        "product_name": "Organic Large Brown Grade AA Cage Free Eggs",
+        "similarity": 0.1838
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.1609
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1585
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1579
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1571
+      },
+      {
+        "product_id": 32655,
+        "product_name": "Organic Large Grade AA Brown Eggs",
+        "similarity": 0.1515
+      },
+      {
+        "product_id": 5785,
+        "product_name": "Organic Reduced Fat 2% Milk",
+        "similarity": 0.1515
+      },
+      {
+        "product_id": 22035,
+        "product_name": "Organic Whole String Cheese",
+        "similarity": 0.1413
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.1385
+      },
+      {
+        "product_id": 5876,
+        "product_name": "Organic Lemon",
+        "similarity": 0.137
+      }
+    ]
+  },
+  "2295": {
+    "product_name": "Yellow Bell Pepper",
+    "similar_products": [
+      {
+        "product_id": 15290,
+        "product_name": "Orange Bell Pepper",
+        "similarity": 0.4036
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.2383
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.228
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.2233
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.2104
+      },
+      {
+        "product_id": 24184,
+        "product_name": "Red Peppers",
+        "similarity": 0.2088
+      },
+      {
+        "product_id": 4605,
+        "product_name": "Yellow Onions",
+        "similarity": 0.2066
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.2061
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.2024
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.1915
+      }
+    ]
+  },
+  "3957": {
+    "product_name": "100% Raw Coconut Water",
+    "similar_products": [
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.2083
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1845
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.1701
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1697
+      },
+      {
+        "product_id": 5876,
+        "product_name": "Organic Lemon",
+        "similarity": 0.1662
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1524
+      },
+      {
+        "product_id": 46667,
+        "product_name": "Organic Ginger Root",
+        "similarity": 0.1503
+      },
+      {
+        "product_id": 30391,
+        "product_name": "Organic Cucumber",
+        "similarity": 0.135
+      },
+      {
+        "product_id": 39275,
+        "product_name": "Organic Blueberries",
+        "similarity": 0.132
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.1305
+      }
+    ]
+  },
+  "4210": {
+    "product_name": "Whole Milk",
+    "similar_products": [
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.1466
+      },
+      {
+        "product_id": 16797,
+        "product_name": "Strawberries",
+        "similarity": 0.1011
+      },
+      {
+        "product_id": 4605,
+        "product_name": "Yellow Onions",
+        "similarity": 0.0954
+      },
+      {
+        "product_id": 23909,
+        "product_name": "2% Reduced Fat Milk",
+        "similarity": 0.0914
+      },
+      {
+        "product_id": 28204,
+        "product_name": "Organic Fuji Apple",
+        "similarity": 0.0914
+      },
+      {
+        "product_id": 29487,
+        "product_name": "Roma Tomato",
+        "similarity": 0.0901
+      },
+      {
+        "product_id": 9076,
+        "product_name": "Blueberries",
+        "similarity": 0.0888
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.0884
+      },
+      {
+        "product_id": 27086,
+        "product_name": "Half & Half",
+        "similarity": 0.0841
+      },
+      {
+        "product_id": 42736,
+        "product_name": "Unsalted Butter",
+        "similarity": 0.0836
+      }
+    ]
+  },
+  "4605": {
+    "product_name": "Yellow Onions",
+    "similar_products": [
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.3541
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.3529
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.3417
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.3038
+      },
+      {
+        "product_id": 17794,
+        "product_name": "Carrots",
+        "similarity": 0.2971
+      },
+      {
+        "product_id": 28842,
+        "product_name": "Bunched Cilantro",
+        "similarity": 0.2938
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.2797
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.2797
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.2668
+      },
+      {
+        "product_id": 20114,
+        "product_name": "Jalapeno Peppers",
+        "similarity": 0.2639
+      }
+    ]
+  },
+  "4799": {
+    "product_name": "Shredded Parmesan",
+    "similar_products": [
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.2544
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.2438
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.2321
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.2192
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.2157
+      },
+      {
+        "product_id": 40604,
+        "product_name": "Feta Cheese Crumbles",
+        "similarity": 0.2115
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.2086
+      },
+      {
+        "product_id": 33731,
+        "product_name": "Grated Parmesan",
+        "similarity": 0.2078
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.2001
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.1987
+      }
+    ]
+  },
+  "4920": {
+    "product_name": "Seedless Red Grapes",
+    "similar_products": [
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.3258
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.3195
+      },
+      {
+        "product_id": 16797,
+        "product_name": "Strawberries",
+        "similarity": 0.3062
+      },
+      {
+        "product_id": 45066,
+        "product_name": "Honeycrisp Apple",
+        "similarity": 0.2616
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.2468
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.2428
+      },
+      {
+        "product_id": 42265,
+        "product_name": "Organic Baby Carrots",
+        "similarity": 0.2393
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.232
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.2291
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.227
+      }
+    ]
+  },
+  "5025": {
+    "product_name": "Green Onions",
+    "similar_products": [
+      {
+        "product_id": 28842,
+        "product_name": "Bunched Cilantro",
+        "similarity": 0.2931
+      },
+      {
+        "product_id": 44142,
+        "product_name": "Red Onion",
+        "similarity": 0.2315
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.2177
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.2172
+      },
+      {
+        "product_id": 20114,
+        "product_name": "Jalapeno Peppers",
+        "similarity": 0.2027
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.1991
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.198
+      },
+      {
+        "product_id": 4605,
+        "product_name": "Yellow Onions",
+        "similarity": 0.1929
+      },
+      {
+        "product_id": 29487,
+        "product_name": "Roma Tomato",
+        "similarity": 0.1854
+      },
+      {
+        "product_id": 8193,
+        "product_name": "Russet Potato",
+        "similarity": 0.1818
+      }
+    ]
+  },
+  "5077": {
+    "product_name": "100% Whole Wheat Bread",
+    "similar_products": [
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.2105
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1931
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.176
+      },
+      {
+        "product_id": 16797,
+        "product_name": "Strawberries",
+        "similarity": 0.1615
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1566
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.1496
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.1374
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.1355
+      },
+      {
+        "product_id": 28204,
+        "product_name": "Organic Fuji Apple",
+        "similarity": 0.1349
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.132
+      }
+    ]
+  },
+  "5212": {
+    "product_name": "Watermelon Chunks",
+    "similar_products": [
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1883
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1557
+      },
+      {
+        "product_id": 4920,
+        "product_name": "Seedless Red Grapes",
+        "similarity": 0.1517
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1456
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.1435
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1397
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.1364
+      },
+      {
+        "product_id": 39275,
+        "product_name": "Organic Blueberries",
+        "similarity": 0.1344
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.1336
+      },
+      {
+        "product_id": 42265,
+        "product_name": "Organic Baby Carrots",
+        "similarity": 0.1332
+      }
+    ]
+  },
+  "5450": {
+    "product_name": "Small Hass Avocado",
+    "similar_products": [
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.2569
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.2295
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.2168
+      },
+      {
+        "product_id": 4605,
+        "product_name": "Yellow Onions",
+        "similarity": 0.2075
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1998
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.193
+      },
+      {
+        "product_id": 17794,
+        "product_name": "Carrots",
+        "similarity": 0.1886
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.1861
+      },
+      {
+        "product_id": 24184,
+        "product_name": "Red Peppers",
+        "similarity": 0.1859
+      },
+      {
+        "product_id": 11777,
+        "product_name": "Red Raspberries",
+        "similarity": 0.1815
+      }
+    ]
+  },
+  "5479": {
+    "product_name": "Italian Sparkling Mineral Water",
+    "similar_products": [
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1354
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1337
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.1322
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1317
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1235
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.1205
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.1179
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.115
+      },
+      {
+        "product_id": 21616,
+        "product_name": "Organic Baby Arugula",
+        "similarity": 0.1123
+      },
+      {
+        "product_id": 40706,
+        "product_name": "Organic Grape Tomatoes",
+        "similarity": 0.1114
+      }
+    ]
+  },
+  "5785": {
+    "product_name": "Organic Reduced Fat 2% Milk",
+    "similar_products": [
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.197
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.1868
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1806
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1806
+      },
+      {
+        "product_id": 30233,
+        "product_name": "Organic Large Brown Grade AA Cage Free Eggs",
+        "similarity": 0.178
+      },
+      {
+        "product_id": 5876,
+        "product_name": "Organic Lemon",
+        "similarity": 0.1654
+      },
+      {
+        "product_id": 27086,
+        "product_name": "Half & Half",
+        "similarity": 0.1534
+      },
+      {
+        "product_id": 1463,
+        "product_name": "Organic Milk",
+        "similarity": 0.1515
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.1409
+      },
+      {
+        "product_id": 8277,
+        "product_name": "Apple Honeycrisp Organic",
+        "similarity": 0.1386
+      }
+    ]
+  },
+  "5876": {
+    "product_name": "Organic Lemon",
+    "similar_products": [
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.4587
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.3957
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.3792
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.3671
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.3586
+      },
+      {
+        "product_id": 44359,
+        "product_name": "Organic Small Bunch Celery",
+        "similarity": 0.3308
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.3286
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.3244
+      },
+      {
+        "product_id": 34126,
+        "product_name": "Organic Italian Parsley Bunch",
+        "similarity": 0.3239
+      },
+      {
+        "product_id": 46667,
+        "product_name": "Organic Ginger Root",
+        "similarity": 0.3208
+      }
+    ]
+  },
+  "6184": {
+    "product_name": "Clementines",
+    "similar_products": [
+      {
+        "product_id": 196,
+        "product_name": "Soda",
+        "similarity": 0.2891
+      },
+      {
+        "product_id": 12341,
+        "product_name": "Hass Avocados",
+        "similarity": 0.2451
+      },
+      {
+        "product_id": 43352,
+        "product_name": "Raspberries",
+        "similarity": 0.2128
+      },
+      {
+        "product_id": 16797,
+        "product_name": "Strawberries",
+        "similarity": 0.1648
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1639
+      },
+      {
+        "product_id": 41787,
+        "product_name": "Bartlett Pears",
+        "similarity": 0.1176
+      },
+      {
+        "product_id": 39408,
+        "product_name": "Gala Apples",
+        "similarity": 0.1148
+      },
+      {
+        "product_id": 39275,
+        "product_name": "Organic Blueberries",
+        "similarity": 0.109
+      },
+      {
+        "product_id": 42265,
+        "product_name": "Organic Baby Carrots",
+        "similarity": 0.0949
+      },
+      {
+        "product_id": 9076,
+        "product_name": "Blueberries",
+        "similarity": 0.0927
+      }
+    ]
+  },
+  "7781": {
+    "product_name": "Organic Sticks Low Moisture Part Skim Mozzarella String Cheese",
+    "similar_products": [
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.2264
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1876
+      },
+      {
+        "product_id": 39275,
+        "product_name": "Organic Blueberries",
+        "similarity": 0.1807
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.1791
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1748
+      },
+      {
+        "product_id": 42265,
+        "product_name": "Organic Baby Carrots",
+        "similarity": 0.162
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.1509
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.1508
+      },
+      {
+        "product_id": 8277,
+        "product_name": "Apple Honeycrisp Organic",
+        "similarity": 0.1459
+      },
+      {
+        "product_id": 4920,
+        "product_name": "Seedless Red Grapes",
+        "similarity": 0.1427
+      }
+    ]
+  },
+  "8021": {
+    "product_name": "100% Recycled Paper Towels",
+    "similar_products": [
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.2154
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1946
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1928
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1896
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.1791
+      },
+      {
+        "product_id": 5876,
+        "product_name": "Organic Lemon",
+        "similarity": 0.1737
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.1654
+      },
+      {
+        "product_id": 31506,
+        "product_name": "Extra Virgin Olive Oil",
+        "similarity": 0.1607
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.1604
+      },
+      {
+        "product_id": 30391,
+        "product_name": "Organic Cucumber",
+        "similarity": 0.1583
+      }
+    ]
+  },
+  "8174": {
+    "product_name": "Organic Navel Orange",
+    "similar_products": [
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.3022
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.2894
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.2791
+      },
+      {
+        "product_id": 5876,
+        "product_name": "Organic Lemon",
+        "similarity": 0.2714
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.2502
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.2449
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.2445
+      },
+      {
+        "product_id": 22825,
+        "product_name": "Organic D'Anjou Pears",
+        "similarity": 0.2403
+      },
+      {
+        "product_id": 8277,
+        "product_name": "Apple Honeycrisp Organic",
+        "similarity": 0.239
+      },
+      {
+        "product_id": 19057,
+        "product_name": "Organic Large Extra Fancy Fuji Apple",
+        "similarity": 0.2315
+      }
+    ]
+  },
+  "8193": {
+    "product_name": "Russet Potato",
+    "similar_products": [
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.2167
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.2104
+      },
+      {
+        "product_id": 4605,
+        "product_name": "Yellow Onions",
+        "similarity": 0.2044
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.2035
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.1933
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.1854
+      },
+      {
+        "product_id": 5025,
+        "product_name": "Green Onions",
+        "similarity": 0.1818
+      },
+      {
+        "product_id": 8424,
+        "product_name": "Broccoli Crown",
+        "similarity": 0.1772
+      },
+      {
+        "product_id": 25890,
+        "product_name": "Boneless Skinless Chicken Breasts",
+        "similarity": 0.1721
+      },
+      {
+        "product_id": 34358,
+        "product_name": "Garlic",
+        "similarity": 0.1717
+      }
+    ]
+  },
+  "8277": {
+    "product_name": "Apple Honeycrisp Organic",
+    "similar_products": [
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.3968
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.3686
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.3334
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.3181
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.3107
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.2927
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.2888
+      },
+      {
+        "product_id": 5876,
+        "product_name": "Organic Lemon",
+        "similarity": 0.2883
+      },
+      {
+        "product_id": 22825,
+        "product_name": "Organic D'Anjou Pears",
+        "similarity": 0.2777
+      },
+      {
+        "product_id": 45066,
+        "product_name": "Honeycrisp Apple",
+        "similarity": 0.2748
+      }
+    ]
+  },
+  "8424": {
+    "product_name": "Broccoli Crown",
+    "similar_products": [
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.2763
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.2657
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.2433
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.2288
+      },
+      {
+        "product_id": 25890,
+        "product_name": "Boneless Skinless Chicken Breasts",
+        "similarity": 0.2235
+      },
+      {
+        "product_id": 14992,
+        "product_name": "Green Beans",
+        "similarity": 0.2194
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.2171
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.2159
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.2125
+      },
+      {
+        "product_id": 46979,
+        "product_name": "Asparagus",
+        "similarity": 0.2071
+      }
+    ]
+  },
+  "8518": {
+    "product_name": "Organic Red Onion",
+    "similar_products": [
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.4022
+      },
+      {
+        "product_id": 31717,
+        "product_name": "Organic Cilantro",
+        "similarity": 0.3892
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.3688
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.3433
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.3423
+      },
+      {
+        "product_id": 34126,
+        "product_name": "Organic Italian Parsley Bunch",
+        "similarity": 0.3297
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.3286
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.3256
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.314
+      },
+      {
+        "product_id": 46667,
+        "product_name": "Organic Ginger Root",
+        "similarity": 0.3119
+      }
+    ]
+  },
+  "9076": {
+    "product_name": "Blueberries",
+    "similar_products": [
+      {
+        "product_id": 16797,
+        "product_name": "Strawberries",
+        "similarity": 0.2983
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.2749
+      },
+      {
+        "product_id": 43352,
+        "product_name": "Raspberries",
+        "similarity": 0.2567
+      },
+      {
+        "product_id": 26604,
+        "product_name": "Organic Blackberries",
+        "similarity": 0.2022
+      },
+      {
+        "product_id": 39275,
+        "product_name": "Organic Blueberries",
+        "similarity": 0.1932
+      },
+      {
+        "product_id": 4920,
+        "product_name": "Seedless Red Grapes",
+        "similarity": 0.1817
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.178
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.1768
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1733
+      },
+      {
+        "product_id": 28204,
+        "product_name": "Organic Fuji Apple",
+        "similarity": 0.1713
+      }
+    ]
+  },
+  "9387": {
+    "product_name": "Granny Smith Apples",
+    "similar_products": [
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.2141
+      },
+      {
+        "product_id": 39877,
+        "product_name": "Organic Granny Smith Apple",
+        "similarity": 0.1732
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.1682
+      },
+      {
+        "product_id": 16797,
+        "product_name": "Strawberries",
+        "similarity": 0.163
+      },
+      {
+        "product_id": 39408,
+        "product_name": "Gala Apples",
+        "similarity": 0.1577
+      },
+      {
+        "product_id": 28204,
+        "product_name": "Organic Fuji Apple",
+        "similarity": 0.1496
+      },
+      {
+        "product_id": 41787,
+        "product_name": "Bartlett Pears",
+        "similarity": 0.1399
+      },
+      {
+        "product_id": 9076,
+        "product_name": "Blueberries",
+        "similarity": 0.1375
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.1358
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.1254
+      }
+    ]
+  },
+  "9839": {
+    "product_name": "Organic Broccoli",
+    "similar_products": [
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.2522
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.2299
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.2274
+      },
+      {
+        "product_id": 27104,
+        "product_name": "Fresh Cauliflower",
+        "similarity": 0.226
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.2225
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.2173
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.2095
+      },
+      {
+        "product_id": 44359,
+        "product_name": "Organic Small Bunch Celery",
+        "similarity": 0.2078
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.2019
+      },
+      {
+        "product_id": 10749,
+        "product_name": "Organic Red Bell Pepper",
+        "similarity": 0.2
+      }
+    ]
+  },
+  "10749": {
+    "product_name": "Organic Red Bell Pepper",
+    "similar_products": [
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.3503
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.3363
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.3288
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.3045
+      },
+      {
+        "product_id": 21938,
+        "product_name": "Green Bell Pepper",
+        "similarity": 0.294
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.2931
+      },
+      {
+        "product_id": 8518,
+        "product_name": "Organic Red Onion",
+        "similarity": 0.2913
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.2904
+      },
+      {
+        "product_id": 30391,
+        "product_name": "Organic Cucumber",
+        "similarity": 0.2895
+      },
+      {
+        "product_id": 40706,
+        "product_name": "Organic Grape Tomatoes",
+        "similarity": 0.2893
+      }
+    ]
+  },
+  "11520": {
+    "product_name": "Large Alfresco Eggs",
+    "similar_products": [
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.1992
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1911
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.1872
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1861
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1859
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1823
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.1708
+      },
+      {
+        "product_id": 44359,
+        "product_name": "Organic Small Bunch Celery",
+        "similarity": 0.1668
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.1615
+      },
+      {
+        "product_id": 34126,
+        "product_name": "Organic Italian Parsley Bunch",
+        "similarity": 0.1591
+      }
+    ]
+  },
+  "11777": {
+    "product_name": "Red Raspberries",
+    "similar_products": [
+      {
+        "product_id": 26604,
+        "product_name": "Organic Blackberries",
+        "similarity": 0.2241
+      },
+      {
+        "product_id": 16797,
+        "product_name": "Strawberries",
+        "similarity": 0.2158
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.1889
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1886
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.1838
+      },
+      {
+        "product_id": 5450,
+        "product_name": "Small Hass Avocado",
+        "similarity": 0.1815
+      },
+      {
+        "product_id": 24184,
+        "product_name": "Red Peppers",
+        "similarity": 0.1621
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1568
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.1512
+      },
+      {
+        "product_id": 46906,
+        "product_name": "Grape White/Green Seedless",
+        "similarity": 0.1477
+      }
+    ]
+  },
+  "12341": {
+    "product_name": "Hass Avocados",
+    "similar_products": [
+      {
+        "product_id": 6184,
+        "product_name": "Clementines",
+        "similarity": 0.2451
+      },
+      {
+        "product_id": 43352,
+        "product_name": "Raspberries",
+        "similarity": 0.2286
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.2028
+      },
+      {
+        "product_id": 16797,
+        "product_name": "Strawberries",
+        "similarity": 0.1897
+      },
+      {
+        "product_id": 39275,
+        "product_name": "Organic Blueberries",
+        "similarity": 0.1738
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1642
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1611
+      },
+      {
+        "product_id": 32689,
+        "product_name": "Romaine Hearts",
+        "similarity": 0.1515
+      },
+      {
+        "product_id": 37687,
+        "product_name": "Organic Spring Mix",
+        "similarity": 0.1471
+      },
+      {
+        "product_id": 42265,
+        "product_name": "Organic Baby Carrots",
+        "similarity": 0.1149
+      }
+    ]
+  },
+  "13176": {
+    "product_name": "Bag of Organic Bananas",
+    "similar_products": [
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.4896
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.4877
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.4129
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.4122
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.3758
+      },
+      {
+        "product_id": 5876,
+        "product_name": "Organic Lemon",
+        "similarity": 0.3671
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.3531
+      },
+      {
+        "product_id": 39275,
+        "product_name": "Organic Blueberries",
+        "similarity": 0.3519
+      },
+      {
+        "product_id": 30391,
+        "product_name": "Organic Cucumber",
+        "similarity": 0.3411
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.3387
+      }
+    ]
+  },
+  "13870": {
+    "product_name": "Lightly Salted Baked Snap Pea Crisps",
+    "similar_products": [
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1909
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1673
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1613
+      },
+      {
+        "product_id": 22035,
+        "product_name": "Organic Whole String Cheese",
+        "similarity": 0.1573
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.1536
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.1529
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1484
+      },
+      {
+        "product_id": 43961,
+        "product_name": "Organic Peeled Whole Baby Carrots",
+        "similarity": 0.1398
+      },
+      {
+        "product_id": 8277,
+        "product_name": "Apple Honeycrisp Organic",
+        "similarity": 0.1367
+      },
+      {
+        "product_id": 30489,
+        "product_name": "Original Hummus",
+        "similarity": 0.1351
+      }
+    ]
+  },
+  "14947": {
+    "product_name": "Pure Sparkling Water",
+    "similar_products": [
+      {
+        "product_id": 21709,
+        "product_name": "Sparkling Lemon Water",
+        "similarity": 0.2171
+      },
+      {
+        "product_id": 44632,
+        "product_name": "Sparkling Water Grapefruit",
+        "similarity": 0.2149
+      },
+      {
+        "product_id": 35221,
+        "product_name": "Lime Sparkling Water",
+        "similarity": 0.1955
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.1179
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.1097
+      },
+      {
+        "product_id": 27086,
+        "product_name": "Half & Half",
+        "similarity": 0.108
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1052
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.1034
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.1009
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1003
+      }
+    ]
+  },
+  "14992": {
+    "product_name": "Green Beans",
+    "similar_products": [
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.234
+      },
+      {
+        "product_id": 8424,
+        "product_name": "Broccoli Crown",
+        "similarity": 0.2194
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.2137
+      },
+      {
+        "product_id": 4605,
+        "product_name": "Yellow Onions",
+        "similarity": 0.213
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.2027
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.2016
+      },
+      {
+        "product_id": 28842,
+        "product_name": "Bunched Cilantro",
+        "similarity": 0.1994
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.1939
+      },
+      {
+        "product_id": 25890,
+        "product_name": "Boneless Skinless Chicken Breasts",
+        "similarity": 0.1849
+      },
+      {
+        "product_id": 16797,
+        "product_name": "Strawberries",
+        "similarity": 0.1801
+      }
+    ]
+  },
+  "15290": {
+    "product_name": "Orange Bell Pepper",
+    "similar_products": [
+      {
+        "product_id": 2295,
+        "product_name": "Yellow Bell Pepper",
+        "similarity": 0.4036
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.2339
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.2195
+      },
+      {
+        "product_id": 24184,
+        "product_name": "Red Peppers",
+        "similarity": 0.2181
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.2131
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.2099
+      },
+      {
+        "product_id": 44142,
+        "product_name": "Red Onion",
+        "similarity": 0.2016
+      },
+      {
+        "product_id": 4605,
+        "product_name": "Yellow Onions",
+        "similarity": 0.1887
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1874
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.1873
+      }
+    ]
+  },
+  "16185": {
+    "product_name": "Sharp Cheddar Cheese",
+    "similar_products": [
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.1831
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.1816
+      },
+      {
+        "product_id": 42736,
+        "product_name": "Unsalted Butter",
+        "similarity": 0.1741
+      },
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.1706
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1664
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.1657
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1624
+      },
+      {
+        "product_id": 4605,
+        "product_name": "Yellow Onions",
+        "similarity": 0.1619
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.15
+      },
+      {
+        "product_id": 33731,
+        "product_name": "Grated Parmesan",
+        "similarity": 0.1496
+      }
+    ]
+  },
+  "16759": {
+    "product_name": "Organic Carrot Bunch",
+    "similar_products": [
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.2874
+      },
+      {
+        "product_id": 44359,
+        "product_name": "Organic Small Bunch Celery",
+        "similarity": 0.2833
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.2746
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.2671
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.2637
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.2521
+      },
+      {
+        "product_id": 5876,
+        "product_name": "Organic Lemon",
+        "similarity": 0.2485
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.2474
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.2386
+      },
+      {
+        "product_id": 34126,
+        "product_name": "Organic Italian Parsley Bunch",
+        "similarity": 0.232
+      }
+    ]
+  },
+  "16797": {
+    "product_name": "Strawberries",
+    "similar_products": [
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.381
+      },
+      {
+        "product_id": 43352,
+        "product_name": "Raspberries",
+        "similarity": 0.3236
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.321
+      },
+      {
+        "product_id": 4920,
+        "product_name": "Seedless Red Grapes",
+        "similarity": 0.3062
+      },
+      {
+        "product_id": 9076,
+        "product_name": "Blueberries",
+        "similarity": 0.2983
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.2769
+      },
+      {
+        "product_id": 39275,
+        "product_name": "Organic Blueberries",
+        "similarity": 0.2686
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.2543
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.2536
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.2492
+      }
+    ]
+  },
+  "17794": {
+    "product_name": "Carrots",
+    "similar_products": [
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.3779
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.3725
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.3422
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.3329
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.3297
+      },
+      {
+        "product_id": 44359,
+        "product_name": "Organic Small Bunch Celery",
+        "similarity": 0.3219
+      },
+      {
+        "product_id": 34126,
+        "product_name": "Organic Italian Parsley Bunch",
+        "similarity": 0.3168
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.3101
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.2994
+      },
+      {
+        "product_id": 46667,
+        "product_name": "Organic Ginger Root",
+        "similarity": 0.2994
+      }
+    ]
+  },
+  "17948": {
+    "product_name": "Frozen Organic Wild Blueberries",
+    "similar_products": [
+      {
+        "product_id": 24489,
+        "product_name": "Organic Whole Strawberries",
+        "similarity": 0.3841
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.256
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.2522
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.2337
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.2305
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.2224
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.2217
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.2183
+      },
+      {
+        "product_id": 44359,
+        "product_name": "Organic Small Bunch Celery",
+        "similarity": 0.2089
+      },
+      {
+        "product_id": 5876,
+        "product_name": "Organic Lemon",
+        "similarity": 0.2019
+      }
+    ]
+  },
+  "18465": {
+    "product_name": "Organic Grade A Free Range Large Brown Eggs",
+    "similar_products": [
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.23
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.2255
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1963
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1937
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.1795
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.1684
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.1624
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.1618
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.1588
+      },
+      {
+        "product_id": 42265,
+        "product_name": "Organic Baby Carrots",
+        "similarity": 0.1571
+      }
+    ]
+  },
+  "18531": {
+    "product_name": "Organic Heavy Whipping Cream",
+    "similar_products": [
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.2251
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.2025
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.2008
+      },
+      {
+        "product_id": 42701,
+        "product_name": "Organic Sour Cream",
+        "similarity": 0.199
+      },
+      {
+        "product_id": 34126,
+        "product_name": "Organic Italian Parsley Bunch",
+        "similarity": 0.1949
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.1861
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1745
+      },
+      {
+        "product_id": 27845,
+        "product_name": "Organic Whole Milk",
+        "similarity": 0.1726
+      },
+      {
+        "product_id": 17794,
+        "product_name": "Carrots",
+        "similarity": 0.1689
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1671
+      }
+    ]
+  },
+  "19057": {
+    "product_name": "Organic Large Extra Fancy Fuji Apple",
+    "similar_products": [
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.3279
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.324
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.3011
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.2622
+      },
+      {
+        "product_id": 27966,
+        "product_name": "Organic Raspberries",
+        "similarity": 0.2607
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.2536
+      },
+      {
+        "product_id": 30391,
+        "product_name": "Organic Cucumber",
+        "similarity": 0.2522
+      },
+      {
+        "product_id": 44359,
+        "product_name": "Organic Small Bunch Celery",
+        "similarity": 0.2451
+      },
+      {
+        "product_id": 22825,
+        "product_name": "Organic D'Anjou Pears",
+        "similarity": 0.2447
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.2361
+      }
+    ]
+  },
+  "19348": {
+    "product_name": "Fat Free Milk",
+    "similar_products": [
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.1234
+      },
+      {
+        "product_id": 16797,
+        "product_name": "Strawberries",
+        "similarity": 0.0964
+      },
+      {
+        "product_id": 28204,
+        "product_name": "Organic Fuji Apple",
+        "similarity": 0.0829
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.0826
+      },
+      {
+        "product_id": 49683,
+        "product_name": "Cucumber Kirby",
+        "similarity": 0.0776
+      },
+      {
+        "product_id": 9387,
+        "product_name": "Granny Smith Apples",
+        "similarity": 0.0763
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.0762
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.0746
+      },
+      {
+        "product_id": 9076,
+        "product_name": "Blueberries",
+        "similarity": 0.0731
+      },
+      {
+        "product_id": 5077,
+        "product_name": "100% Whole Wheat Bread",
+        "similarity": 0.0725
+      }
+    ]
+  },
+  "19660": {
+    "product_name": "Spring Water",
+    "similar_products": [
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.1594
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1382
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.1336
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1248
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.1163
+      },
+      {
+        "product_id": 8021,
+        "product_name": "100% Recycled Paper Towels",
+        "similarity": 0.1151
+      },
+      {
+        "product_id": 5876,
+        "product_name": "Organic Lemon",
+        "similarity": 0.1115
+      },
+      {
+        "product_id": 30391,
+        "product_name": "Organic Cucumber",
+        "similarity": 0.1084
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.1072
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.107
+      }
+    ]
+  },
+  "19678": {
+    "product_name": "Organic Russet Potato",
+    "similar_products": [
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.3218
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.3046
+      },
+      {
+        "product_id": 47209,
+        "product_name": "Organic Hass Avocado",
+        "similarity": 0.2628
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.2621
+      },
+      {
+        "product_id": 44359,
+        "product_name": "Organic Small Bunch Celery",
+        "similarity": 0.2553
+      },
+      {
+        "product_id": 13176,
+        "product_name": "Bag of Organic Bananas",
+        "similarity": 0.2434
+      },
+      {
+        "product_id": 45007,
+        "product_name": "Organic Zucchini",
+        "similarity": 0.2432
+      },
+      {
+        "product_id": 5876,
+        "product_name": "Organic Lemon",
+        "similarity": 0.2388
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.2365
+      },
+      {
+        "product_id": 34126,
+        "product_name": "Organic Italian Parsley Bunch",
+        "similarity": 0.2292
+      }
+    ]
+  },
+  "20114": {
+    "product_name": "Jalapeno Peppers",
+    "similar_products": [
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.3637
+      },
+      {
+        "product_id": 28842,
+        "product_name": "Bunched Cilantro",
+        "similarity": 0.3234
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.2949
+      },
+      {
+        "product_id": 31717,
+        "product_name": "Organic Cilantro",
+        "similarity": 0.2771
+      },
+      {
+        "product_id": 24964,
+        "product_name": "Organic Garlic",
+        "similarity": 0.2689
+      },
+      {
+        "product_id": 4605,
+        "product_name": "Yellow Onions",
+        "similarity": 0.2639
+      },
+      {
+        "product_id": 8518,
+        "product_name": "Organic Red Onion",
+        "similarity": 0.257
+      },
+      {
+        "product_id": 44142,
+        "product_name": "Red Onion",
+        "similarity": 0.2569
+      },
+      {
+        "product_id": 22935,
+        "product_name": "Organic Yellow Onion",
+        "similarity": 0.2326
+      },
+      {
+        "product_id": 34126,
+        "product_name": "Organic Italian Parsley Bunch",
+        "similarity": 0.2249
+      }
+    ]
+  },
+  "20842": {
+    "product_name": "Total 0% Greek Yogurt",
+    "similar_products": [
+      {
+        "product_id": 24852,
+        "product_name": "Banana",
+        "similarity": 0.1605
+      },
+      {
+        "product_id": 21903,
+        "product_name": "Organic Baby Spinach",
+        "similarity": 0.1349
+      },
+      {
+        "product_id": 21137,
+        "product_name": "Organic Strawberries",
+        "similarity": 0.1268
+      },
+      {
+        "product_id": 47626,
+        "product_name": "Large Lemon",
+        "similarity": 0.1221
+      },
+      {
+        "product_id": 47766,
+        "product_name": "Organic Avocado",
+        "similarity": 0.1211
+      },
+      {
+        "product_id": 26209,
+        "product_name": "Limes",
+        "similarity": 0.1189
+      },
+      {
+        "product_id": 42265,
+        "product_name": "Organic Baby Carrots",
+        "similarity": 0.1159
+      },
+      {
+        "product_id": 39275,
+        "product_name": "Organic Blueberries",
+        "similarity": 0.112
+      },
+      {
+        "product_id": 28204,
+        "product_name": "Organic Fuji Apple",
+        "similarity": 0.1119
+      },
+      {
+        "product_id": 9076,
+        "product_name": "Blueberries",
+        "similarity": 0.1115
+      }
+    ]
+  }
+}

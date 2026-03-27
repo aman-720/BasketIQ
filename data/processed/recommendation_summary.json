@@ -1,0 +1,10 @@
+{
+  "total_product_pairs": 11077,
+  "top_pair": "Bag of Organic Bananas + Organic Hass Avocado",
+  "top_pair_count": 2609,
+  "methods": [
+    "Item-Item Collaborative Filtering",
+    "Co-Purchase Analysis",
+    "Reorder Probability"
+  ]
+}

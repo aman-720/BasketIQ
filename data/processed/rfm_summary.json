@@ -1,0 +1,47 @@
+{
+  "total_users": 206209,
+  "n_clusters": 5,
+  "silhouette_score": 0.27118527489966876,
+  "segments": {
+    "Champions": {
+      "count": 10044,
+      "pct": 4.9,
+      "avg_orders": 64.8,
+      "avg_items": 826.1,
+      "avg_days_between": 5.8,
+      "avg_reorder_rate": 0.731
+    },
+    "Loyal Customers": {
+      "count": 32655,
+      "pct": 15.8,
+      "avg_orders": 32.5,
+      "avg_items": 347.2,
+      "avg_days_between": 9.6,
+      "avg_reorder_rate": 0.62
+    },
+    "Potential Loyalists": {
+      "count": 56200,
+      "pct": 27.3,
+      "avg_orders": 14.7,
+      "avg_items": 121.8,
+      "avg_days_between": 13.9,
+      "avg_reorder_rate": 0.578
+    },
+    "At-Risk": {
+      "count": 47813,
+      "pct": 23.2,
+      "avg_orders": 7.2,
+      "avg_items": 61.4,
+      "avg_days_between": 11.8,
+      "avg_reorder_rate": 0.266
+    },
+    "Hibernating": {
+      "count": 59497,
+      "pct": 28.9,
+      "avg_orders": 5.6,
+      "avg_items": 50.7,
+      "avg_days_between": 23.9,
+      "avg_reorder_rate": 0.275
+    }
+  }
+}
