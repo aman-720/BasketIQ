@@ -2,6 +2,8 @@
 
 Analyzed 32.4M grocery transactions to mine association rules and segment 206,209 users into 5 RFM-based clusters. Visualized findings in an interactive HTML dashboard to drive targeted marketing and customer retention strategies.
 
+**[Live Dashboard →](https://aman-720.github.io/BasketIQ/)**
+
 ---
 
 ## Results at a Glance
@@ -18,9 +20,22 @@ Analyzed 32.4M grocery transactions to mine association rules and segment 206,20
 
 ---
 
+## Dashboard Preview
+
+![Order Heatmap](visualizations/08_order_heatmap.png)
+*Orders by day of week and hour — Sunday & Monday peak, 10 AM–3 PM window*
+
+![Customer Segments](visualizations/16_cluster_distribution.png)
+*5 RFM-based customer clusters — Champions to Hibernating*
+
+![Association Rules](visualizations/11_top_rules_lift.png)
+*Top aisle-level association rules by lift (max lift: 6.27)*
+
+---
+
 ## About the Data
 
-This project uses the **Instacart Market Basket Analysis** schema — the same structure as the [public Kaggle dataset](https://www.kaggle.com/c/instacart-market-basket-analysis/data).
+This project uses the **Instacart Market Basket Analysis** dataset — publicly available on [Kaggle](https://www.kaggle.com/c/instacart-market-basket-analysis/data).
 
 You have two options to get the data:
 
@@ -41,9 +56,7 @@ kaggle competitions download -c instacart-market-basket-analysis
 unzip instacart-market-basket-analysis.zip -d data/raw/
 ```
 
-The real dataset has 3.4M orders from 206K users. The analysis scripts work on both without modification.
-
-> **Note for portfolio / interviews:** The analysis pipeline, algorithms, and all code are fully production-ready. The synthetic dataset was used for development because Kaggle requires account authentication. Results with the real dataset will show the same patterns with larger scale.
+See [`data/raw/README.md`](data/raw/README.md) for full setup instructions.
 
 ---
 
@@ -63,12 +76,14 @@ BasketIQ/
 │   └── 04_recommendations.py    # 3 recommendation methods (3 charts)
 │
 ├── data/
-│   ├── raw/                      # Source CSVs (gitignored for large files)
+│   ├── raw/                      # Source CSVs (gitignored — see data/raw/README.md)
 │   └── processed/                # Analysis outputs (CSVs + JSONs)
 │
 ├── visualizations/               # 23 publication-quality PNG charts
-└── dashboard/
-    └── index.html                # Self-contained interactive dashboard
+├── dashboard/
+│   └── index.html                # Self-contained interactive dashboard
+└── docs/
+    └── index.html                # GitHub Pages deployment
 ```
 
 ---
@@ -79,7 +94,7 @@ BasketIQ/
 # 1. Install dependencies
 pip install -r requirements.txt
 
-# 2. Generate data
+# 2. Get data (synthetic or real — see "About the Data" above)
 python generate_data.py
 
 # 3. Run the full analysis pipeline
@@ -132,11 +147,12 @@ Three complementary methods:
 
 ## Interactive Dashboard
 
-Open `dashboard/index.html` in any browser. No server needed.
+**[View live →](https://aman-720.github.io/BasketIQ/)**
+Or open `dashboard/index.html` locally in any browser — no server needed.
 
 Four tabs: Overview · Association Rules · Customer Segments · Recommendations
 
-Built with Chart.js — line, bar, doughnut, radar, and scatter charts, KPI cards, and sortable data tables.
+Built with Chart.js 4.5 — line, bar, doughnut, radar, and scatter charts, KPI cards, and sortable data tables.
 
 ---
 
@@ -145,11 +161,11 @@ Built with Chart.js — line, bar, doughnut, radar, and scatter charts, KPI card
 | Layer | Tools |
 |---|---|
 | Language | Python 3.10 |
-| Data | pandas, NumPy |
-| Association Rules | mlxtend (Apriori) |
-| Clustering | scikit-learn (K-Means, StandardScaler, silhouette_score) |
-| Recommendations | scikit-learn (cosine_similarity), scipy (csr_matrix) |
-| Visualization | matplotlib, seaborn |
+| Data | pandas 2.3.3, NumPy 2.2.6 |
+| Association Rules | mlxtend 0.23.4 (Apriori) |
+| Clustering | scikit-learn 1.7.2 (K-Means, silhouette_score) |
+| Recommendations | scikit-learn (cosine_similarity), scipy 1.15.3 |
+| Visualization | matplotlib 3.10.8, seaborn 0.13.2 |
 | Dashboard | Chart.js 4.5, HTML / CSS / JS |
 
 ---

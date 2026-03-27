@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasketIQ | Market Basket Analysis Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1" integrity="sha384-jb8JQMbMoBUzgWatfe6COACi2ljcDdZQ2OxczGA3bGNeWe+6DChMTBJemed7ZnvJ" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-hover: #263548;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-blue: #3b82f6;
+            --accent-green: #22c55e;
+            --accent-orange: #f97316;
+            --accent-purple: #a855f7;
+            --accent-red: #ef4444;
+            --accent-cyan: #06b6d4;
+            --border: #334155;
+            --gap: 16px;
+            --radius: 12px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        .dashboard {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* ── Header ──────────────────────────── */
+        .header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #60a5fa, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header .subtitle {
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 6px;
+            background: rgba(0,0,0,0.3);
+            padding: 4px;
+            border-radius: 8px;
+        }
+
+        .tab {
+            padding: 8px 18px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .tab.active {
+            background: var(--accent-blue);
+            color: white;
+        }
+
+        .tab:hover:not(.active) {
+            background: rgba(255,255,255,0.05);
+            color: var(--text-primary);
+        }
+
+        /* ── KPIs ────────────────────────────── */
+        .kpi-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--gap);
+            margin-bottom: 20px;
+        }
+
+        .kpi-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-blue);
+        }
+
+        .kpi-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .kpi-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .kpi-sub {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .kpi-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        /* ── Charts ──────────────────────────── */
+        .chart-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: var(--gap);
+            margin-bottom: 20px;
+        }
+
+        .chart-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+        }
+
+        .chart-container h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .chart-container canvas {
+            max-height: 320px;
+        }
+
+        /* ── Tables ──────────────────────────── */
+        .table-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+
+        .table-section h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        thead th {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 2px solid var(--border);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        thead th:hover { color: var(--text-primary); }
+
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            color: var(--text-secondary);
+        }
+
+        tbody tr:hover { background: rgba(255,255,255,0.02); }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .badge-blue { background: rgba(59,130,246,0.15); color: var(--accent-blue); }
+        .badge-green { background: rgba(34,197,94,0.15); color: var(--accent-green); }
+        .badge-orange { background: rgba(249,115,22,0.15); color: var(--accent-orange); }
+        .badge-purple { background: rgba(168,85,247,0.15); color: var(--accent-purple); }
+        .badge-red { background: rgba(239,68,68,0.15); color: var(--accent-red); }
+
+        /* ── Sections ────────────────────────── */
+        .section { display: none; }
+        .section.active { display: block; }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        /* ── Footer ──────────────────────────── */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 12px;
+            border-top: 1px solid var(--border);
+            margin-top: 20px;
+        }
+
+        /* ── Responsive ──────────────────────── */
+        @media (max-width: 768px) {
+            .header { flex-direction: column; align-items: flex-start; }
+            .chart-row { grid-template-columns: 1fr; }
+            .kpi-row { grid-template-columns: repeat(2, 1fr); }
+            .tabs { flex-wrap: wrap; }
+        }
+
+        @media print {
+            body { background: white; color: #333; }
+            .tabs { display: none; }
+            .section { display: block !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>BasketIQ Dashboard</h1>
+                <div class="subtitle">Market Basket Analysis | 32.4M+ Transactions | 206,209 Users | 49,688 Products</div>
+            </div>
+            <div class="tabs">
+                <button class="tab active" onclick="showSection('overview')">Overview</button>
+                <button class="tab" onclick="showSection('association')">Association Rules</button>
+                <button class="tab" onclick="showSection('segments')">Customer Segments</button>
+                <button class="tab" onclick="showSection('recommendations')">Recommendations</button>
+            </div>
+        </div>
+
+        <!-- ═══════════ OVERVIEW SECTION ═══════════ -->
+        <div id="overview" class="section active">
+            <div class="kpi-row">
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background:rgba(59,130,246,0.15)">📦</div>
+                    <div class="kpi-label">Total Transactions</div>
+                    <div class="kpi-value">32.4M</div>
+                    <div class="kpi-sub">Across 3,214,874 orders</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background:rgba(34,197,94,0.15)">👥</div>
+                    <div class="kpi-label">Unique Users</div>
+                    <div class="kpi-value">206,209</div>
+                    <div class="kpi-sub">Avg 15.6 orders/user</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background:rgba(249,115,22,0.15)">🛒</div>
+                    <div class="kpi-label">Avg Basket Size</div>
+                    <div class="kpi-value">10.1</div>
+                    <div class="kpi-sub">Items per order (median: 8)</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background:rgba(168,85,247,0.15)">🔄</div>
+                    <div class="kpi-label">Reorder Rate</div>
+                    <div class="kpi-value">58.9%</div>
+                    <div class="kpi-sub">Items are reordered</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background:rgba(6,182,212,0.15)">📅</div>
+                    <div class="kpi-label">Avg Days Between</div>
+                    <div class="kpi-value">11.1</div>
+                    <div class="kpi-sub">Days between orders</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon" style="background:rgba(239,68,68,0.15)">🏷️</div>
+                    <div class="kpi-label">Products Catalog</div>
+                    <div class="kpi-value">49,688</div>
+                    <div class="kpi-sub">21 departments, 134 aisles</div>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-container">
+                    <h3>Orders by Hour of Day</h3>
+                    <canvas id="hourlyChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Orders by Day of Week</h3>
+                    <canvas id="dowChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-container">
+                    <h3>Top 15 Products</h3>
+                    <canvas id="topProductsChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Orders by Department</h3>
+                    <canvas id="deptChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-container full-width">
+                    <h3>Top 15 Aisles by Volume</h3>
+                    <canvas id="aisleChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════════ ASSOCIATION RULES SECTION ═══════════ -->
+        <div id="association" class="section">
+            <div class="kpi-row">
+                <div class="kpi-card">
+                    <div class="kpi-label">Aisle-Level Rules</div>
+                    <div class="kpi-value">2,016</div>
+                    <div class="kpi-sub">Rules discovered</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Product-Level Rules</div>
+                    <div class="kpi-value">158</div>
+                    <div class="kpi-sub">Rules discovered</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Max Lift</div>
+                    <div class="kpi-value">6.27</div>
+                    <div class="kpi-sub">Strongest association</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Frequent Itemsets</div>
+                    <div class="kpi-value">1,739</div>
+                    <div class="kpi-sub">Discovered via Apriori</div>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-container">
+                    <h3>Top Aisle Association Rules (by Lift)</h3>
+                    <canvas id="aisleRulesChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Support vs Confidence (Aisle Rules)</h3>
+                    <canvas id="scatterChart"></canvas>
+                </div>
+            </div>
+
+            <div class="table-section">
+                <h3>Top 15 Aisle-Level Association Rules</h3>
+                <table id="aisleRulesTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>If Customer Buys (Antecedent)</th>
+                            <th>They Also Buy (Consequent)</th>
+                            <th>Support</th>
+                            <th>Confidence</th>
+                            <th>Lift</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="table-section">
+                <h3>Top 15 Product-Level Association Rules</h3>
+                <table id="prodRulesTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>If Customer Buys</th>
+                            <th>They Also Buy</th>
+                            <th>Support</th>
+                            <th>Confidence</th>
+                            <th>Lift</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ═══════════ CUSTOMER SEGMENTS SECTION ═══════════ -->
+        <div id="segments" class="section">
+            <div class="kpi-row">
+                <div class="kpi-card">
+                    <div class="kpi-label">Champions</div>
+                    <div class="kpi-value" style="color:var(--accent-blue)">10,044</div>
+                    <div class="kpi-sub">4.9% of users | 64.8 avg orders</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Loyal Customers</div>
+                    <div class="kpi-value" style="color:var(--accent-green)">32,655</div>
+                    <div class="kpi-sub">15.8% of users | 32.5 avg orders</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Potential Loyalists</div>
+                    <div class="kpi-value" style="color:var(--accent-orange)">56,200</div>
+                    <div class="kpi-sub">27.3% of users | 14.7 avg orders</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">At-Risk</div>
+                    <div class="kpi-value" style="color:var(--accent-purple)">47,813</div>
+                    <div class="kpi-sub">23.2% of users | 7.2 avg orders</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Hibernating</div>
+                    <div class="kpi-value" style="color:var(--accent-red)">59,497</div>
+                    <div class="kpi-sub">28.9% of users | 5.6 avg orders</div>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-container">
+                    <h3>Segment Distribution</h3>
+                    <canvas id="segmentPieChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Segment Comparison: Key Metrics</h3>
+                    <canvas id="segmentBarChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-container full-width">
+                    <h3>Segment Profiles: Radar Chart</h3>
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </div>
+
+            <div class="table-section">
+                <h3>Cluster Profiles Summary</h3>
+                <table id="clusterTable">
+                    <thead>
+                        <tr>
+                            <th>Segment</th>
+                            <th>Users</th>
+                            <th>% Share</th>
+                            <th>Avg Orders</th>
+                            <th>Avg Items</th>
+                            <th>Avg Days Between</th>
+                            <th>Reorder Rate</th>
+                            <th>Strategy</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ═══════════ RECOMMENDATIONS SECTION ═══════════ -->
+        <div id="recommendations" class="section">
+            <div class="kpi-row">
+                <div class="kpi-card">
+                    <div class="kpi-label">Recommendation Methods</div>
+                    <div class="kpi-value">3</div>
+                    <div class="kpi-sub">Item-CF, Co-purchase, Reorder Prob</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Product Pairs Analyzed</div>
+                    <div class="kpi-value">11,077</div>
+                    <div class="kpi-sub">Unique co-purchase pairs</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Top Co-Purchase</div>
+                    <div class="kpi-value" style="font-size:18px">Org. Bananas + Avocado</div>
+                    <div class="kpi-sub">2,609 co-purchases</div>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-container full-width">
+                    <h3>Top 15 Frequently Bought Together</h3>
+                    <canvas id="fbtChart"></canvas>
+                </div>
+            </div>
+
+            <div class="table-section">
+                <h3>Frequently Bought Together (Top 15 Pairs)</h3>
+                <table id="fbtTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Product A</th>
+                            <th>Product B</th>
+                            <th>Co-purchase Count</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            BasketIQ | Market Basket Analysis Dashboard | Built with Chart.js | Data: 32.4M Instacart Transactions
+        </div>
+    </div>
+
+    <script>
+    // ═══════════════════════════════════════════════════════════════
+    // DATA
+    // ═══════════════════════════════════════════════════════════════
+    const COLORS = ['#3b82f6','#22c55e','#f97316','#a855f7','#ef4444','#06b6d4','#eab308','#ec4899'];
+
+    const hourlyData = [21372,11596,7070,5120,5175,8972,28792,86656,168321,243496,271885,268006,256206,261174,265556,266132,255949,214080,170998,131620,98109,73436,57540,37613];
+    const dowData = [557772,556705,441955,412400,401212,425982,418848];
+    const dowLabels = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+    const topProducts = [
+        {name:'Banana',count:472565},{name:'Bag of Organic Bananas',count:379450},{name:'Organic Strawberries',count:264683},
+        {name:'Organic Baby Spinach',count:241921},{name:'Organic Hass Avocado',count:213584},
+        {name:'Organic Avocado',count:176815},{name:'Large Lemon',count:152657},{name:'Strawberries',count:142951},
+        {name:'Limes',count:140627},{name:'Organic Whole Milk',count:137905},{name:'Organic Raspberries',count:137057},
+        {name:'Organic Yellow Onion',count:113426},{name:'Organic Garlic',count:109778},
+        {name:'Organic Zucchini',count:104823},{name:'Organic Blueberries',count:100060}
+    ];
+
+    const departments = [
+        {name:'Produce',items:9479291},{name:'Dairy Eggs',items:5414016},{name:'Snacks',items:2887550},
+        {name:'Beverages',items:2690129},{name:'Frozen',items:2236432},{name:'Pantry',items:1875577},
+        {name:'Bakery',items:1176787},{name:'Canned Goods',items:1068058},{name:'Deli',items:1051249},
+        {name:'Dry Goods Pasta',items:866627},{name:'Household',items:738666},{name:'Breakfast',items:709569},
+        {name:'Meat Seafood',items:708931}
+    ];
+
+    const aisles = [
+        {name:'Fresh Fruits',items:3642188},{name:'Fresh Vegetables',items:3418021},{name:'Packaged Veg & Fruits',items:1765313},
+        {name:'Yogurt',items:1452343},{name:'Packaged Cheese',items:979763},{name:'Milk',items:891015},
+        {name:'Water/Seltzer',items:841533},{name:'Chips Pretzels',items:722470},{name:'Soy/Lactose Free',items:638253},
+        {name:'Bread',items:584834},{name:'Refrigerated',items:575881},{name:'Frozen Produce',items:522654},
+        {name:'Ice Cream',items:498425},{name:'Crackers',items:458838},{name:'Energy/Granola Bars',items:456386}
+    ];
+
+    const aisleRules = [
+        {ant:'Frozen Vegan/Vegetarian',con:'Tofu/Meat Alternatives',sup:0.0051,conf:0.203,lift:6.27},
+        {ant:'Tofu/Meat Alternatives',con:'Frozen Vegan/Vegetarian',sup:0.0051,conf:0.158,lift:6.27},
+        {ant:'Dry Pasta',con:'Pasta Sauce',sup:0.0205,conf:0.280,lift:4.50},
+        {ant:'Pasta Sauce',con:'Dry Pasta',sup:0.0205,conf:0.329,lift:4.50},
+        {ant:'Cleaning Products',con:'Paper Goods',sup:0.0070,conf:0.256,lift:4.22},
+        {ant:'Paper Goods',con:'Cleaning Products',sup:0.0070,conf:0.115,lift:4.22},
+        {ant:'Latino Foods',con:'Canned Meals/Beans',sup:0.0060,conf:0.283,lift:4.02},
+        {ant:'Laundry',con:'Paper Goods',sup:0.0058,conf:0.230,lift:3.79},
+        {ant:'Dish Detergents',con:'Paper Goods',sup:0.0058,conf:0.216,lift:3.56},
+        {ant:'Canned/Jarred Vegetables',con:'Canned Meals/Beans',sup:0.0177,conf:0.235,lift:3.33},
+        {ant:'Frozen Pizza',con:'Frozen Appetizers/Sides',sup:0.0074,conf:0.170,lift:3.24},
+        {ant:'Hot Dogs/Bacon/Sausage',con:'Buns/Rolls',sup:0.0091,conf:0.105,lift:3.19},
+        {ant:'Breakfast Bars/Pastries',con:'Energy/Granola Bars',sup:0.0052,conf:0.276,lift:3.16},
+        {ant:'Frozen Pizza',con:'Frozen Meals',sup:0.0098,conf:0.225,lift:3.05},
+        {ant:'Frozen Pizza',con:'Instant Foods',sup:0.0066,conf:0.153,lift:3.04}
+    ];
+
+    const prodRules = [
+        {ant:'Organic Garlic',con:'Organic Ginger Root',sup:0.0084,conf:0.116,lift:3.25},
+        {ant:'Organic Ginger Root',con:'Organic Garlic',sup:0.0084,conf:0.236,lift:3.25},
+        {ant:'Raspberries',con:'Strawberries',sup:0.0086,conf:0.263,lift:3.22},
+        {ant:'Strawberries',con:'Raspberries',sup:0.0086,conf:0.105,lift:3.22},
+        {ant:'Organic Cilantro',con:'Limes',sup:0.0127,conf:0.278,lift:3.03},
+        {ant:'Limes',con:'Organic Cilantro',sup:0.0127,conf:0.139,lift:3.03},
+        {ant:'Organic Yellow Onion',con:'Organic Garlic',sup:0.0157,conf:0.208,lift:2.87},
+        {ant:'Organic Garlic',con:'Organic Yellow Onion',sup:0.0157,conf:0.216,lift:2.87},
+        {ant:'Organic Yellow Onion',con:'Organic Small Bunch Celery',sup:0.0082,conf:0.109,lift:2.36},
+        {ant:'Large Lemon',con:'Limes',sup:0.0203,conf:0.209,lift:2.28},
+        {ant:'Limes',con:'Large Lemon',sup:0.0203,conf:0.221,lift:2.28},
+        {ant:'Organic Lemon',con:'Organic Hass Avocado',sup:0.0147,conf:0.271,lift:1.97},
+        {ant:'Organic Raspberries',con:'Organic Blueberries',sup:0.0099,conf:0.116,lift:1.85},
+        {ant:'Organic Blueberries',con:'Organic Raspberries',sup:0.0099,conf:0.149,lift:1.85},
+        {ant:'Banana',con:'Bag of Organic Bananas',sup:0.0251,conf:0.189,lift:1.72}
+    ];
+
+    const clusters = [
+        {seg:'Champions',count:10044,pct:4.9,orders:64.8,items:826,days:5.8,reorder:73.1,color:'#3b82f6'},
+        {seg:'Loyal Customers',count:32655,pct:15.8,orders:32.5,items:347,days:9.6,reorder:62.0,color:'#22c55e'},
+        {seg:'Potential Loyalists',count:56200,pct:27.3,orders:14.7,items:122,days:13.9,reorder:57.8,color:'#f97316'},
+        {seg:'At-Risk',count:47813,pct:23.2,orders:7.2,items:61,days:11.8,reorder:26.6,color:'#a855f7'},
+        {seg:'Hibernating',count:59497,pct:28.9,orders:5.6,items:51,days:23.9,reorder:27.5,color:'#ef4444'}
+    ];
+
+    const strategies = {
+        'Champions': 'Reward with loyalty programs & early access',
+        'Loyal Customers': 'Upsell premium products & referral bonuses',
+        'Potential Loyalists': 'Personalized offers to increase frequency',
+        'At-Risk': 'Win-back campaigns & reactivation discounts',
+        'Hibernating': 'Re-engagement emails & special comeback offers'
+    };
+
+    const fbt = [
+        {a:'Bag of Organic Bananas',b:'Organic Hass Avocado',count:2609},
+        {a:'Bag of Organic Bananas',b:'Organic Strawberries',count:2580},
+        {a:'Organic Strawberries',b:'Banana',count:2251},
+        {a:'Banana',b:'Organic Avocado',count:2174},
+        {a:'Organic Baby Spinach',b:'Banana',count:2089},
+        {a:'Bag of Organic Bananas',b:'Organic Baby Spinach',count:2054},
+        {a:'Organic Strawberries',b:'Organic Hass Avocado',count:1748},
+        {a:'Banana',b:'Large Lemon',count:1676},
+        {a:'Bag of Organic Bananas',b:'Organic Raspberries',count:1667},
+        {a:'Strawberries',b:'Banana',count:1639},
+        {a:'Organic Strawberries',b:'Organic Baby Spinach',count:1612},
+        {a:'Banana',b:'Organic Fuji Apple',count:1424},
+        {a:'Organic Strawberries',b:'Organic Raspberries',count:1396},
+        {a:'Organic Baby Spinach',b:'Organic Hass Avocado',count:1389},
+        {a:'Banana',b:'Limes',count:1335}
+    ];
+
+    // ═══════════════════════════════════════════════════════════════
+    // TAB NAVIGATION
+    // ═══════════════════════════════════════════════════════════════
+    function showSection(id) {
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        event.target.classList.add('active');
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // CHART DEFAULTS
+    // ═══════════════════════════════════════════════════════════════
+    Chart.defaults.color = '#94a3b8';
+    Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
+    Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+
+    function fmt(n) {
+        if (n >= 1e6) return (n/1e6).toFixed(1) + 'M';
+        if (n >= 1e3) return (n/1e3).toFixed(1) + 'K';
+        return n.toLocaleString();
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // OVERVIEW CHARTS
+    // ═══════════════════════════════════════════════════════════════
+
+    // Hourly
+    new Chart(document.getElementById('hourlyChart'), {
+        type: 'line',
+        data: {
+            labels: Array.from({length:24}, (_,i) => i + ':00'),
+            datasets: [{
+                label: 'Orders',
+                data: hourlyData,
+                borderColor: '#3b82f6',
+                backgroundColor: 'rgba(59,130,246,0.1)',
+                fill: true,
+                tension: 0.4,
+                pointRadius: 3,
+                pointHoverRadius: 6,
+                borderWidth: 2.5
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => fmt(ctx.parsed.y) + ' orders' }}},
+            scales: { y: { beginAtZero: true, ticks: { callback: v => fmt(v) }}, x: { grid: { display: false }}}
+        }
+    });
+
+    // DOW
+    new Chart(document.getElementById('dowChart'), {
+        type: 'bar',
+        data: {
+            labels: dowLabels,
+            datasets: [{
+                label: 'Orders',
+                data: dowData,
+                backgroundColor: COLORS.slice(0,7).map(c => c + 'CC'),
+                borderColor: COLORS.slice(0,7),
+                borderWidth: 1,
+                borderRadius: 6
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => fmt(ctx.parsed.y) + ' orders' }}},
+            scales: { y: { beginAtZero: true, ticks: { callback: v => fmt(v) }}, x: { grid: { display: false }}}
+        }
+    });
+
+    // Top Products
+    new Chart(document.getElementById('topProductsChart'), {
+        type: 'bar',
+        data: {
+            labels: topProducts.map(p => p.name),
+            datasets: [{
+                label: 'Orders',
+                data: topProducts.map(p => p.count),
+                backgroundColor: '#22c55eCC',
+                borderColor: '#22c55e',
+                borderWidth: 1,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+            plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => fmt(ctx.parsed.x) + ' orders' }}},
+            scales: { x: { beginAtZero: true, ticks: { callback: v => fmt(v) }}, y: { ticks: { font: { size: 10 }}}}
+        }
+    });
+
+    // Departments
+    new Chart(document.getElementById('deptChart'), {
+        type: 'doughnut',
+        data: {
+            labels: departments.map(d => d.name),
+            datasets: [{
+                data: departments.map(d => d.items),
+                backgroundColor: COLORS.concat(['#64748b','#78716c','#84cc16','#14b8a6']).map(c => c + 'CC'),
+                borderColor: '#1e293b',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false, cutout: '55%',
+            plugins: {
+                legend: { position: 'right', labels: { usePointStyle: true, padding: 8, font: { size: 10 }}},
+                tooltip: { callbacks: { label: ctx => {
+                    const total = ctx.dataset.data.reduce((a,b) => a+b, 0);
+                    return `${ctx.label}: ${fmt(ctx.parsed)} (${((ctx.parsed/total)*100).toFixed(1)}%)`;
+                }}}
+            }
+        }
+    });
+
+    // Aisles
+    new Chart(document.getElementById('aisleChart'), {
+        type: 'bar',
+        data: {
+            labels: aisles.map(a => a.name),
+            datasets: [{
+                label: 'Items',
+                data: aisles.map(a => a.items),
+                backgroundColor: '#f97316CC',
+                borderColor: '#f97316',
+                borderWidth: 1,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => fmt(ctx.parsed.y) + ' items' }}},
+            scales: { y: { beginAtZero: true, ticks: { callback: v => fmt(v) }}, x: { grid: { display: false }, ticks: { font: { size: 10 }}}}
+        }
+    });
+
+    // ═══════════════════════════════════════════════════════════════
+    // ASSOCIATION RULES CHARTS
+    // ═══════════════════════════════════════════════════════════════
+
+    new Chart(document.getElementById('aisleRulesChart'), {
+        type: 'bar',
+        data: {
+            labels: aisleRules.slice(0,10).map(r => r.ant + ' → ' + r.con),
+            datasets: [{
+                label: 'Lift',
+                data: aisleRules.slice(0,10).map(r => r.lift),
+                backgroundColor: '#3b82f6CC',
+                borderColor: '#3b82f6',
+                borderWidth: 1,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+            plugins: { legend: { display: false }},
+            scales: { x: { min: 1, title: { display: true, text: 'Lift' }}, y: { ticks: { font: { size: 9 }}}}
+        }
+    });
+
+    new Chart(document.getElementById('scatterChart'), {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Rules',
+                data: aisleRules.map(r => ({x: r.sup, y: r.conf})),
+                backgroundColor: aisleRules.map(r => {
+                    const t = (r.lift - 1.24) / (1.31 - 1.24);
+                    return `rgba(${Math.round(239*t+59*(1-t))}, ${Math.round(68*t+130*(1-t))}, ${Math.round(68*t+246*(1-t))}, 0.6)`;
+                }),
+                pointRadius: 6,
+                pointHoverRadius: 9
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `Support: ${ctx.parsed.x.toFixed(4)} | Conf: ${(ctx.parsed.y*100).toFixed(1)}%` }}},
+            scales: { x: { title: { display: true, text: 'Support' }}, y: { title: { display: true, text: 'Confidence' }, ticks: { callback: v => (v*100).toFixed(0) + '%' }}}
+        }
+    });
+
+    // Populate aisle rules table
+    const aisleTableBody = document.querySelector('#aisleRulesTable tbody');
+    aisleRules.forEach((r, i) => {
+        aisleTableBody.innerHTML += `<tr>
+            <td>${i+1}</td>
+            <td>${r.ant}</td>
+            <td>${r.con}</td>
+            <td>${r.sup.toFixed(4)}</td>
+            <td>${(r.conf*100).toFixed(1)}%</td>
+            <td><span class="badge badge-blue">${r.lift.toFixed(3)}</span></td>
+        </tr>`;
+    });
+
+    // Populate product rules table
+    const prodTableBody = document.querySelector('#prodRulesTable tbody');
+    prodRules.forEach((r, i) => {
+        prodTableBody.innerHTML += `<tr>
+            <td>${i+1}</td>
+            <td>${r.ant}</td>
+            <td>${r.con}</td>
+            <td>${r.sup.toFixed(4)}</td>
+            <td>${(r.conf*100).toFixed(1)}%</td>
+            <td><span class="badge badge-green">${r.lift.toFixed(3)}</span></td>
+        </tr>`;
+    });
+
+    // ═══════════════════════════════════════════════════════════════
+    // CUSTOMER SEGMENTS CHARTS
+    // ═══════════════════════════════════════════════════════════════
+
+    new Chart(document.getElementById('segmentPieChart'), {
+        type: 'doughnut',
+        data: {
+            labels: clusters.map(c => c.seg),
+            datasets: [{
+                data: clusters.map(c => c.count),
+                backgroundColor: clusters.map(c => c.color + 'CC'),
+                borderColor: '#1e293b',
+                borderWidth: 3
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false, cutout: '60%',
+            plugins: {
+                legend: { position: 'right', labels: { usePointStyle: true, padding: 12 }},
+                tooltip: { callbacks: { label: ctx => `${ctx.label}: ${ctx.parsed.toLocaleString()} users (${clusters[ctx.dataIndex].pct}%)` }}
+            }
+        }
+    });
+
+    new Chart(document.getElementById('segmentBarChart'), {
+        type: 'bar',
+        data: {
+            labels: clusters.map(c => c.seg),
+            datasets: [
+                { label: 'Avg Orders', data: clusters.map(c => c.orders), backgroundColor: '#3b82f6CC', borderRadius: 4 },
+                { label: 'Avg Items / 10', data: clusters.map(c => c.items/10), backgroundColor: '#22c55eCC', borderRadius: 4 },
+                { label: 'Avg Days Between', data: clusters.map(c => c.days), backgroundColor: '#f97316CC', borderRadius: 4 }
+            ]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { position: 'top', labels: { usePointStyle: true }}},
+            scales: { y: { beginAtZero: true }, x: { grid: { display: false }, ticks: { font: { size: 10 }}}}
+        }
+    });
+
+    // Radar chart
+    new Chart(document.getElementById('radarChart'), {
+        type: 'radar',
+        data: {
+            labels: ['Frequency', 'Monetary', 'Recency (inv)', 'Product Variety', 'Reorder Rate'],
+            datasets: clusters.map((c, i) => {
+                const maxOrders = 66.6, maxItems = 523, maxDays = 16.4, maxUnique = 198, maxReorder = 63.5;
+                return {
+                    label: c.seg,
+                    data: [
+                        c.orders / maxOrders,
+                        c.items / maxItems,
+                        1 - (c.days / maxDays),
+                        (c.seg === 'Champions' ? 198 : c.seg === 'Loyal Customers' ? 140 : c.seg === 'Potential Loyalists' ? 82 : 78) / maxUnique,
+                        c.reorder / maxReorder
+                    ],
+                    borderColor: c.color,
+                    backgroundColor: c.color + '20',
+                    borderWidth: 2,
+                    pointRadius: 3
+                };
+            })
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { position: 'top', labels: { usePointStyle: true, padding: 12 }}},
+            scales: { r: { beginAtZero: true, max: 1, ticks: { display: false }, grid: { color: 'rgba(255,255,255,0.06)' }, pointLabels: { font: { size: 11 }}}}
+        }
+    });
+
+    // Cluster table
+    const clusterTableBody = document.querySelector('#clusterTable tbody');
+    const badgeClasses = ['badge-blue','badge-green','badge-orange','badge-purple','badge-red'];
+    clusters.forEach((c, i) => {
+        clusterTableBody.innerHTML += `<tr>
+            <td><span class="badge ${badgeClasses[i]}">${c.seg}</span></td>
+            <td>${c.count.toLocaleString()}</td>
+            <td>${c.pct}%</td>
+            <td>${c.orders}</td>
+            <td>${c.items}</td>
+            <td>${c.days}</td>
+            <td>${c.reorder}%</td>
+            <td style="font-size:11px;color:var(--text-secondary)">${strategies[c.seg]}</td>
+        </tr>`;
+    });
+
+    // ═══════════════════════════════════════════════════════════════
+    // RECOMMENDATIONS CHARTS
+    // ═══════════════════════════════════════════════════════════════
+
+    new Chart(document.getElementById('fbtChart'), {
+        type: 'bar',
+        data: {
+            labels: fbt.map(f => f.a + ' + ' + f.b),
+            datasets: [{
+                label: 'Co-purchases',
+                data: fbt.map(f => f.count),
+                backgroundColor: '#a855f7CC',
+                borderColor: '#a855f7',
+                borderWidth: 1,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+            plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => fmt(ctx.parsed.x) + ' co-purchases' }}},
+            scales: { x: { beginAtZero: true, ticks: { callback: v => fmt(v) }}, y: { ticks: { font: { size: 9 }}}}
+        }
+    });
+
+    // FBT table
+    const fbtTableBody = document.querySelector('#fbtTable tbody');
+    fbt.forEach((f, i) => {
+        fbtTableBody.innerHTML += `<tr>
+            <td>${i+1}</td>
+            <td>${f.a}</td>
+            <td>${f.b}</td>
+            <td><strong>${f.count.toLocaleString()}</strong></td>
+        </tr>`;
+    });
+
+    </script>
+</body>
+</html>
